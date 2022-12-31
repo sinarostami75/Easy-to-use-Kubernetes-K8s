@@ -10,7 +10,7 @@ Kubernetes is hosted by the Cloud Native Computing Foundation (CNCF). If your co
 
 # Complete configurations of commonly used services in Kubernetes
 ### Contain : 
-
+1- RabbitMQ  ![RabbitMQ_logo svg](https://user-images.githubusercontent.com/62883434/210129462-0d8a8a46-b972-401b-8b17-1da6890e7e22.png)
 
 # To start using K8s
 See our documentation on kubernetes.io.
