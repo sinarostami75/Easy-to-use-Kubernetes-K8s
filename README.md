@@ -9,3 +9,10 @@ Kubernetes builds upon a decade and a half of experience at Google running produ
 Kubernetes is hosted by the Cloud Native Computing Foundation (CNCF). If your company wants to help shape the evolution of technologies that are container-packaged, dynamically scheduled, and microservices-oriented, consider joining the CNCF. For details about who's involved and how Kubernetes plays a role, read the CNCF announcement.
 
 # To start using K8s
+See our documentation on kubernetes.io.
+
+Try our interactive tutorial.
+
+Take a free course on Scalable Microservices with Kubernetes.
+
+To use Kubernetes code as a library in other applications, see the list of published components. Use of the k8s.io/kubernetes module or k8s.io/kubernetes/... packages as libraries is not supported.
