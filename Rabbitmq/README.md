@@ -9,6 +9,14 @@ If you have a running Kubernetes cluster and `kubectl` configured to access it, 
 
 First, you should clone the Rabbitmq project, after that, you can create a new directory or folder and copy all config files to that next you can use this command. 
 
+For create namespace use this command or if you have a namespace you should change config file and replace your namespace : 
+
+```bash
+kubectl create ns production
+```
+
+After Run this command (The first commandment is structure command):
+
 ```bash
 kubectl apply -f /PATH PROJECT/.
 ```
