@@ -6,14 +6,16 @@ Kubernetes operator to deploy and manage [RabbitMQ](https://www.rabbitmq.com/) c
 
 If you have a running Kubernetes cluster and `kubectl` configured to access it, run the following command to install the operator:
 
+First, you should clone the Rabbitmq project, after that, you can create a new directory or folder and copy all config files to that next you can use this command. 
+
 ```bash
-kubectl apply -f https://github.com/rabbitmq/cluster-operator/releases/latest/download/cluster-operator.yml
+kubectl apply -f /PATH PROJECT/.
 ```
 
 Then you can deploy a RabbitMQ cluster:
 
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/rabbitmq/cluster-operator/main/docs/examples/hello-world/rabbitmq.yaml
+kubectl apply -f /rabbitmq/.
 ```
 
 <p align="center">
