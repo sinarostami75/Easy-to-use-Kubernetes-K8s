@@ -1,4 +1,5 @@
 # RabbitMQ Cluster Kubernetes Operator
+![pngwing com](https://user-images.githubusercontent.com/62883434/210199449-69f2c10b-9cc3-4407-bac5-e48a31524336.png)
 
 Kubernetes operator to deploy and manage [RabbitMQ](https://www.rabbitmq.com/) clusters. This repository contains a [custom controller](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/#custom-controllers) and [custom resource definition (CRD)](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/#customresourcedefinitions) designed for the lifecycle (creation, upgrade, graceful shutdown) of a RabbitMQ cluster.
 
