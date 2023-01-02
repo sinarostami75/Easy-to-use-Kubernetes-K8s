@@ -18,10 +18,6 @@ Then you can deploy a RabbitMQ cluster:
 kubectl apply -f /rabbitmq/.
 ```
 
-<p align="center">
-  <img width="100%" src="./docs/demos/installation.svg">
-</p>
-
 ## Documentation
 
 RabbitMQ Cluster Kubernetes Operator is covered by several guides:
