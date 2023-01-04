@@ -1,6 +1,7 @@
 ## Kubernetes Redis Cluster
+![zcazcas](https://user-images.githubusercontent.com/62883434/210499256-ca76dccd-0cbe-485c-9f70-8ac3c48740e7.png)
 
-Deploy Redis cluster in Kubernetes
+#### Deploy Redis cluster in Kubernetes
 
 ![badge (1)](https://user-images.githubusercontent.com/62883434/210497719-5796c850-8f10-4b1b-ba00-8c0e7e54c70d.svg)
 ![badge](https://user-images.githubusercontent.com/62883434/210497678-51d73d7c-459e-4aa7-8659-93a45219590d.svg)
@@ -25,3 +26,27 @@ Deploy Redis cluster in Kubernetes
 [Redis Cluster](https://redis.io/topics/cluster-tutorial) is a set of Redis instances, designed for scaling a database by partitioning it, hence making it more resilient. Each member in the cluster, whether a primary or a secondary replica, manages a subset of the hash slot. If a master becomes unreachable then its slave will be promoted to master. In a minimal Redis Cluster made up of 3 master nodes each wigh a single slave node (to allow minimal fail-over), each master node is assigned a hash slot range between 0 and 16,383. Node A will contain hash slots from 0 to 5000, node B from 5001 to 10000, node C from 10001 to 16383. Communication inside the cluster is made via an internal bus, using a gossip protocol in order to propagate information about the cluster or to discover new nodes. 
 
 ![Redis-v2-separate-03](https://user-images.githubusercontent.com/62883434/210498297-ac722efc-ab85-4ca9-91a3-99fff2272f08.jpg)
+
+## Quickstart
+
+If you have a running Kubernetes cluster and `kubectl` configured to access it, run the following command to install the operator:
+
+First, you should clone the Redis project, after that, you can create a new directory or folder and copy all config files to that next you can use this command. 
+
+For create namespace use this command or if you have a namespace you should change config file and replace your namespace : 
+
+```bash
+kubectl create ns production
+```
+
+After Run this command (The first commandment is structure command):
+
+```bash
+kubectl apply -f /PATH PROJECT/.
+```
+
+Then you can deploy a Redis cluster:
+
+```bash
+kubectl apply -f /Redis/.
+```
