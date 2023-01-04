@@ -2,7 +2,7 @@
 
 Deploy Redis cluster in Kubernetes
 
-![DockerImage-Github](https://github.com/sina-sec/Easy-to-use-Kubernetes-K8s/blob/main/Redis/badge/badge%20(1).svg) ![DockerImage-Dockerhub]
+![DockerImage-Github](https://github.com/sina-sec/Easy-to-use-Kubernetes-K8s/blob/main/Redis/badge/badge%20(1).svg) ![DockerImage-Dockerhub](https://github.com/sina-sec/Easy-to-use-Kubernetes-K8s/blob/main/Redis/badge/badge.svg)
 ### Introduction
 [Redis](https://redis.io) (REmote DIctionary Server) is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. It can store and manipulate high-level data types like lists, maps, sets, and sorted sets. Because Redis can accept keys in a wide range of formats, operations can be executed on the server and reduce the client's workload. Also it holds its database entirely in memory, using the disk only for persistence. Redis is so popular being highly used by tech giants like GitHub, Pinterest, Snapchat, Twitter, StackOverflow, Flickr and many more.
 
