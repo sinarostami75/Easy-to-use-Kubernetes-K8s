@@ -26,7 +26,14 @@ Then you can deploy a RabbitMQ cluster:
 ```bash
 kubectl apply -f /rabbitmq/.
 ```
-
+For check status POD on your namespace:
+```bash
+kubectl -n production get pod 
+```
+### OR
+```bash
+kubectl -n production get pod -w
+```
 ## Documentation
 
 RabbitMQ Cluster Kubernetes Operator is covered by several guides:
