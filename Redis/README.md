@@ -42,13 +42,13 @@ kubectl create ns production
 After Run this command (The first commandment is structure command):
 
 ```bash
-kubectl apply -f /PATH PROJECT/.
+kubectl -n [YOUR NAMESPACE] apply -f /PATH PROJECT/.
 ```
 
 Then you can deploy a Redis cluster:
 
 ```bash
-kubectl apply -f /Redis/.
+kubectl -n production apply -f /Redis/.
 ```
 For check status POD on your namespace:
 ```bash
