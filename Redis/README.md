@@ -21,3 +21,7 @@ Deploy Redis cluster in Kubernetes
 - Twitter stores the timeline for all users with a Redis cluster
 - Pinterest stores the user follower graphs in a Redis cluster where data is sharded across hundreds of instances
 - Github, uses the queueing solution from Redis
+## About Redis Cluster
+[Redis Cluster](https://redis.io/topics/cluster-tutorial) is a set of Redis instances, designed for scaling a database by partitioning it, hence making it more resilient. Each member in the cluster, whether a primary or a secondary replica, manages a subset of the hash slot. If a master becomes unreachable then its slave will be promoted to master. In a minimal Redis Cluster made up of 3 master nodes each wigh a single slave node (to allow minimal fail-over), each master node is assigned a hash slot range between 0 and 16,383. Node A will contain hash slots from 0 to 5000, node B from 5001 to 10000, node C from 10001 to 16383. Communication inside the cluster is made via an internal bus, using a gossip protocol in order to propagate information about the cluster or to discover new nodes. 
+
+![Redis-v2-separate-03](https://user-images.githubusercontent.com/62883434/210498297-ac722efc-ab85-4ca9-91a3-99fff2272f08.jpg)
